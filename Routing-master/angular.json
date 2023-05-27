@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "form-validation-project": {
+    "website": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/form-validation-project",
+            "outputPath": "dist/website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "form-validation-project:build:production"
+              "browserTarget": "website:build:production"
             },
             "development": {
-              "browserTarget": "form-validation-project:build:development"
+              "browserTarget": "website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "form-validation-project:build"
+            "browserTarget": "website:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "b06d1c26-9062-469c-a44a-87ee37a036b7"
+    "analytics": "430297d6-792a-42ad-9dec-3e16c73fae06"
   }
 }
